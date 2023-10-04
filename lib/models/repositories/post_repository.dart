@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:geocoding/geocoding.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:insta_clone/data_models/location.dart';
 import 'package:insta_clone/utils/constants.dart';
 
 import '../db/database_manager.dart';

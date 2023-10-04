@@ -1,7 +1,8 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:geocoding/geocoding.dart';
+import 'package:insta_clone/data_models/location.dart';
+
 import 'package:insta_clone/utils/constants.dart';
 
 import '../models/repositories/post_repository.dart';

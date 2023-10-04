@@ -1,4 +1,4 @@
-class location {
+class Location {
   final double latitude;
   final double longitude;
   final String country;
@@ -6,7 +6,7 @@ class location {
   final String city;
 
 //<editor-fold desc="Data Methods">
-  const location({
+  const Location({
     required this.latitude,
     required this.longitude,
     required this.country,
@@ -17,7 +17,7 @@ class location {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      (other is location &&
+      (other is Location &&
           runtimeType == other.runtimeType &&
           latitude == other.latitude &&
           longitude == other.longitude &&
@@ -44,14 +44,14 @@ class location {
         '}';
   }
 
-  location copyWith({
+  Location copyWith({
     double? latitude,
     double? longitude,
     String? country,
     String? state,
     String? city,
   }) {
-    return location(
+    return Location(
       latitude: latitude ?? this.latitude,
       longitude: longitude ?? this.longitude,
       country: country ?? this.country,
@@ -70,8 +70,8 @@ class location {
     };
   }
 
-  factory location.fromMap(Map<String, dynamic> map) {
-    return location(
+  factory Location.fromMap(Map<String, dynamic> map) {
+    return Location(
       latitude: map['latitude'] as double,
       longitude: map['longitude'] as double,
       country: map['country'] as String,
